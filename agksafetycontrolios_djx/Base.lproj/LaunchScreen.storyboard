@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxL-HH-ujY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwb-0Y-6FI">
+                                        <rect key="frame" x="78" y="327" width="258" height="164.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen_logo" translatesAutoresizingMaskIntoConstraints="NO" id="RBq-1P-aad">
+                                                <rect key="frame" x="96.5" y="0.0" width="65" height="92"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen_pic" translatesAutoresizingMaskIntoConstraints="NO" id="Gs7-au-Hte">
+                                                <rect key="frame" x="8" y="132" width="250" height="32.5"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Gs7-au-Hte" firstAttribute="top" secondItem="RBq-1P-aad" secondAttribute="bottom" constant="40" id="1Xi-mc-VBi"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gs7-au-Hte" secondAttribute="trailing" id="40W-dP-JK5"/>
+                                            <constraint firstItem="Gs7-au-Hte" firstAttribute="leading" secondItem="jwb-0Y-6FI" secondAttribute="leadingMargin" id="4wu-hb-Zrl"/>
+                                            <constraint firstItem="Gs7-au-Hte" firstAttribute="leading" secondItem="jwb-0Y-6FI" secondAttribute="leading" constant="8" id="5O5-3B-Omu"/>
+                                            <constraint firstItem="RBq-1P-aad" firstAttribute="top" secondItem="jwb-0Y-6FI" secondAttribute="top" id="6BM-dw-80S"/>
+                                            <constraint firstAttribute="bottom" secondItem="Gs7-au-Hte" secondAttribute="bottom" id="Rzx-0L-qgs"/>
+                                            <constraint firstItem="RBq-1P-aad" firstAttribute="centerX" secondItem="jwb-0Y-6FI" secondAttribute="centerX" id="e4V-vs-GJ0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="jwb-0Y-6FI" firstAttribute="centerX" secondItem="pxL-HH-ujY" secondAttribute="centerX" id="VcB-9Y-LLk"/>
+                                    <constraint firstItem="jwb-0Y-6FI" firstAttribute="centerY" secondItem="pxL-HH-ujY" secondAttribute="centerY" id="eUB-06-ufg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pxL-HH-ujY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5PT-uz-Mx0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pxL-HH-ujY" secondAttribute="bottom" id="9JY-qI-Aux"/>
+                            <constraint firstItem="pxL-HH-ujY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="R0S-WG-3TU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pxL-HH-ujY" secondAttribute="trailing" id="hK7-YC-oER"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchScreen_logo" width="65" height="92"/>
+        <image name="launchScreen_pic" width="250" height="32.5"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_agksafetycontrolios_djxTests {
+  umbrella header "Pods-agksafetycontrolios_djxTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

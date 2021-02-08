@@ -1,0 +1,133 @@
+//
+//  PrefixHeader.pch
+//  agksafetycontrolios_djx
+//
+//  Created by 世界之窗 on 2019/8/30.
+//  Copyright © 2019 世界之窗. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+/********************** Rect Size *************************/
+//通用获取屏幕宽高
+#define KScreenH  [UIScreen mainScreen].bounds.size.height
+#define KScreenW  [UIScreen mainScreen].bounds.size.width
+
+
+//侧边栏的宽度
+#define leftSideMeunWidth  KSIphonScreenW(260)
+
+// 弱引用
+#define WS(wSelf)           __weak typeof(self) wSelf = self
+
+// iPhone X系列
+#define k_iphone_x              (KScreenH >= 812.0f)
+
+//对应屏幕的宽高
+#define KSIphonScreenH(a)  (KScreenH/667)*a
+#define KSIphonScreenW(a)  (KScreenW/375)*a
+
+//导航栏高度
+#define KSStatusHeight ((KScreenH == 812.0 || KScreenH ==896) ? 44 : 20)
+#define KSNaviTopHeight (KSStatusHeight+44)
+//TabBar高度
+#define KSTabbarH ((KScreenH == 812.0 || KScreenH ==896) ? 34 : 0)
+#define KSTabBarHeight  (KSTabbarH+49)
+
+#define Font(x) [UIFont systemFontOfSize:x ]  //设置字体大小 （传数字）
+#define BFont(x) [UIFont boldSystemFontOfSize:x ] //设置字体加粗的大小 （传数字）
+
+/********************** 类 *************************/
+#import "AFNetworking.h"
+#import <MBProgressHUD.h>
+#import <REFrostedViewController.h>
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+// 引入JPush功能所需头文件
+#import "JPUSHService.h"
+// iOS10注册APNs所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
+// 如果需要使用idfa功能所需要引入的头文件（可选）
+#import <AdSupport/AdSupport.h>
+// 获取当前网络状态
+#import "Reachability.h"
+//// 百度云SDK
+#import <IDLFaceSDK/IDLFaceSDK.h>
+#import "FaceParameterConfig.h"
+#import "DetectionViewController.h"
+#import "LivenessViewController.h"
+#import <YYText.h>
+#import "SZPageController.h"
+#import <YYModel/YYModel.h>
+#import "DataBaseManager.h"
+#import "KafkaRefresh.h"
+#import <OYCountDownManager.h>
+// 百度定位
+#import <BMKLocationkit/BMKLocationComponent.h>
+// 百度地图 //引入base相关所有的头文件
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
+//引入地图功能所有的头文件
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
+// 引入 JPush 功能所需头文件
+#import "JPUSHService.h"
+// iOS10 注册 APNs 所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
+// 如果需要使用 idfa 功能所需要引入的头文件（可选）
+#import <AdSupport/AdSupport.h>
+// 获取手机唯一识别
+#import "UIDevice+IdentifierAddition.h"
+// 阿里云上传文件
+#import <AliyunOSSiOS/AliyunOSSiOS.h>
+// 查看大图
+#import "KSPhotoBrowser.h"
+//视频播放
+#import <ZFPlayer/ZFPlayer.h>
+// 视频管理类
+#import <ZFAVPlayerManager.h>
+// 图片多选
+#import <TZImagePickerController/TZImagePickerController.h>
+
+
+#import <Bugly/Bugly.h>
+
+#import "AppDelegate.h"
+#import "KRMainNetTool.h"
+#import "agksafetycontrolios_djxAPI.h"
+#import "SDRootNavigationController.h"
+#import "UIColor+ColorChange.h"
+#import "UILabel+SDChangLineSpace.h"
+#import "YWTTools.h"
+#import "YWTUserInfo.h"
+#import "XZMBProgressManager.h"
+#import "ZTGCDTimerManager.h"
+#import "YWTLeftViewController.h"
+#import "YWTHomeViewController.h"
+#import "YWTLoginViewController.h"
+#import "UIResponder+LKBubble.h"
+#import "UIButton+LZCategory.h"
+#import "UIViewController+Extension.h"
+#import "FSTextView.h"
+#import "YWTShowServicePromptView.h"
+#import "YWTMessageCenterController.h"
+#import "UIImage+SDFixOrientation.h"
+#import <YYText.h>
+
+#import "YWTCWVoiceView.h"
+#import "CWAudioPlayView.h"
+#import "CWRecordModel.h"
+#import "CWAudioPlayView.h"
+#import "YWTBaseVodPlayView.h"
+#import "XWScanImage.h"
+#import "UIView+Geometry.h"
+#import "NSString+YWTEncodingCharacters.h"
+
+
+#endif /* PrefixHeader_pch */

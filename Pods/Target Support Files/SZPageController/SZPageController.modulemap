@@ -1,0 +1,6 @@
+framework module SZPageController {
+  umbrella header "SZPageController-umbrella.h"
+
+  export *
+  module * { export * }
+}
